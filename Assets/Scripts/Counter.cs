@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -19,8 +18,15 @@ public class Counter : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _isButtonPressed = !_isButtonPressed;
-            StartCoroutine(IncreaseScoreOverTime());
+            if (_isButtonPressed == true)
+            {
+                _isButtonPressed = false;
+            }
+            else
+            {
+                _isButtonPressed = true;
+                StartCoroutine(IncreaseScoreOverTime());
+            }
         }
     }
 
