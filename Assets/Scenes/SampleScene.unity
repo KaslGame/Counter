@@ -313,7 +313,7 @@ GameObject:
   - component: {fileID: 99632826}
   - component: {fileID: 99632828}
   m_Layer: 5
-  m_Name: ButtonSound1 (1)
+  m_Name: Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -338,7 +338,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.020081002, y: 7.443756}
+  m_AnchoredPosition: {x: 0.020081002, y: 7.443817}
   m_SizeDelta: {x: 221.46, y: 202.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &99632826
@@ -422,19 +422,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 99632826}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 246118960}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &112068082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,7 +1810,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 0
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1833,7 +1821,7 @@ MonoBehaviour:
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: 1258ac417dd158a48b05eeedb739c469, type: 3}
     m_SelectedSprite: {fileID: 0}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
@@ -1849,20 +1837,8 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2136109874}
-        m_TargetAssemblyTypeName: GamePanel, Assembly-CSharp
-        m_MethodName: ToggleMasterVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_IsOn: 0
+      m_Calls: []
+  m_IsOn: 1
 --- !u!114 &1037523232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2050,7 +2026,7 @@ GameObject:
   - component: {fileID: 1080009030}
   - component: {fileID: 1080009032}
   m_Layer: 5
-  m_Name: ButtonSound1
+  m_Name: Blizzard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2075,7 +2051,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -633.5799, y: 7.443756}
+  m_AnchoredPosition: {x: -633.5799, y: 7.443817}
   m_SizeDelta: {x: 221.46, y: 202.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080009030
@@ -2159,19 +2135,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1080009030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 446992558}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1103172174
 GameObject:
   m_ObjectHideFlags: 0
@@ -2185,7 +2149,7 @@ GameObject:
   - component: {fileID: 1103172176}
   - component: {fileID: 1103172178}
   m_Layer: 5
-  m_Name: ButtonSound1 (2)
+  m_Name: Burn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2210,7 +2174,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 633.62006, y: 7.443756}
+  m_AnchoredPosition: {x: 633.62006, y: 7.443817}
   m_SizeDelta: {x: 221.46, y: 202.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1103172176
@@ -2294,19 +2258,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1103172176}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1224686041}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1224686039
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +2970,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3465,7 +3417,7 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.0001
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3718,7 +3670,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -3788,6 +3740,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _mixer: {fileID: 24300002, guid: 333c098d05844ec43beec0feab8bbbc5, type: 2}
+  _blizzardSource: {fileID: 446992558}
+  _bubbleSource: {fileID: 246118960}
+  _burnSource: {fileID: 1224686041}
+  _volumeToggle: {fileID: 1037523231}
+  _blizzardButton: {fileID: 1080009032}
+  _bubbleButton: {fileID: 99632828}
+  _burnButton: {fileID: 1103172178}
+  _musicSlider: {fileID: 1599512982}
+  _effectsSlider: {fileID: 2113021496}
+  _masterSlider: {fileID: 1916223579}
 --- !u!1 &2140468239
 GameObject:
   m_ObjectHideFlags: 0
