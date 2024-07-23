@@ -854,6 +854,7 @@ GameObject:
   - component: {fileID: 269596685}
   - component: {fileID: 269596687}
   - component: {fileID: 269596686}
+  - component: {fileID: 269596688}
   m_Layer: 5
   m_Name: BackgroundSettings
   m_TagString: Untagged
@@ -925,6 +926,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269596684}
   m_CullTransparentMesh: 1
+--- !u!114 &269596688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269596684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac9a4ee590c6a4998a3a78862985d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24300002, guid: 333c098d05844ec43beec0feab8bbbc5, type: 2}
+  _musicSlider: {fileID: 1599512982}
+  _effectsSlider: {fileID: 2113021496}
+  _masterSlider: {fileID: 1916223579}
 --- !u!1 &365104545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,6 +1780,7 @@ GameObject:
   - component: {fileID: 1037523233}
   - component: {fileID: 1037523232}
   - component: {fileID: 1037523231}
+  - component: {fileID: 1037523234}
   m_Layer: 5
   m_Name: ButtonMusic
   m_TagString: Untagged
@@ -1877,6 +1895,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037523229}
   m_CullTransparentMesh: 1
+--- !u!114 &1037523234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037523229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ef505b114831774ca76151f3538f3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24300002, guid: 333c098d05844ec43beec0feab8bbbc5, type: 2}
+  _volumeToggle: {fileID: 1037523231}
+  _slidersManager: {fileID: 269596688}
 --- !u!1 &1060188399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,6 +2849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1583410324}
+  - component: {fileID: 1583410325}
   m_Layer: 5
   m_Name: ButtonsSounds
   m_TagString: Untagged
@@ -2846,6 +2880,25 @@ RectTransform:
   m_AnchoredPosition: {x: -0.020081, y: 108.880005}
   m_SizeDelta: {x: 1488.7, y: 217.76001}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1583410325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583410323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf6b4004a2076d428186db854806352, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Mixer: {fileID: 24300002, guid: 333c098d05844ec43beec0feab8bbbc5, type: 2}
+  _blizzardSource: {fileID: 446992558}
+  _bubbleSource: {fileID: 246118960}
+  _burnSource: {fileID: 1224686041}
+  _blizzardButton: {fileID: 1080009032}
+  _bubbleButton: {fileID: 99632828}
+  _burnButton: {fileID: 1103172178}
 --- !u!1 &1596534195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2974,7 +3027,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2136109874}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GamePanel, Assembly-CSharp
         m_MethodName: ChangeMusicVolume
         m_Mode: 0
@@ -3421,7 +3474,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2136109874}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GamePanel, Assembly-CSharp
         m_MethodName: ChangeMasterVolume
         m_Mode: 0
@@ -3674,7 +3727,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2136109874}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GamePanel, Assembly-CSharp
         m_MethodName: ChangeEffectsVolume
         m_Mode: 0
@@ -3695,7 +3748,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2136109873}
-  - component: {fileID: 2136109874}
   m_Layer: 5
   m_Name: GamePanel
   m_TagString: Untagged
@@ -3727,29 +3779,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2136109874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2136109872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ef505b114831774ca76151f3538f3da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _mixer: {fileID: 24300002, guid: 333c098d05844ec43beec0feab8bbbc5, type: 2}
-  _blizzardSource: {fileID: 446992558}
-  _bubbleSource: {fileID: 246118960}
-  _burnSource: {fileID: 1224686041}
-  _volumeToggle: {fileID: 1037523231}
-  _blizzardButton: {fileID: 1080009032}
-  _bubbleButton: {fileID: 99632828}
-  _burnButton: {fileID: 1103172178}
-  _musicSlider: {fileID: 1599512982}
-  _effectsSlider: {fileID: 2113021496}
-  _masterSlider: {fileID: 1916223579}
 --- !u!1 &2140468239
 GameObject:
   m_ObjectHideFlags: 0
